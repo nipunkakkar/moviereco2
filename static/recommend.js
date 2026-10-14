@@ -12,7 +12,7 @@ $(function() {
   source.addEventListener('input', inputHandler);
 
   $('.movie-button').on('click',function(){
-    var my_api_key = '5492165c61b1a21c06eb3a3b578a6339';
+    var my_api_key = 'ADD_YOUR_TMDB_API_KEY_HERE';
     var title = $('.movie').val();
     if (title=="") {
       $('.results').css('display','none');
@@ -26,7 +26,7 @@ $(function() {
 
 // will be invoked when clicking on the recommended movies
 function recommendcard(e){
-  var my_api_key = '5492165c61b1a21c06eb3a3b578a6339';
+  var my_api_key = 'ADD_YOUR_TMDB_API_KEY_HERE';
   var title = e.getAttribute('title'); 
   load_details(my_api_key,title);
 }
